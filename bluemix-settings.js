@@ -51,7 +51,9 @@ var settings = module.exports = {
     // Serve up the welcome page
     httpStatic: path.join(__dirname,"public"),
 
-    functionGlobalContext: { },
+    functionGlobalContext: { 
+        "node-red-node-random":"0.0.8"
+    },
 
     storageModule: require("./couchstorage")
 }
